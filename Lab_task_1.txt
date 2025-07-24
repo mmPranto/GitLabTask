@@ -1,0 +1,7 @@
+mkdir [NewRepo]
+cd [NewRepo]
+git init
+echo "# New Repo" > README.md
+git add .
+git commit -m "Initial commit"
+gh repo create [NewRepo] --public --source=. --remote=origin --push
